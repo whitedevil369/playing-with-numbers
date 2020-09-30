@@ -1,7 +1,8 @@
-const router = require("express");
+const router = require("express")();
 
 router.post("/pal", (req, res) => {
 console.log('palindrome')
+ //Add Your Code Here
 });
 
 router.post("/arm", (req, res) => {
