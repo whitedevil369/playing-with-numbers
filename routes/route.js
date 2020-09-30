@@ -1,32 +1,26 @@
-const express = require("express");
-var app = express();
+const router = require("express");
 
-app.get("/pal", (req, res) => {
-  res.json({
-    result: palindrome(param1),
-    meta: {
-      success: true,
-      code: 200
-    }
-  });
+router.post("/pal", (req, res) => {
+console.log('palindrome')
 });
 
-app.get("/arm", (req, res) => {
+router.post("/arm", (req, res) => {
  //Add Your Code Here
 });
 
-app.get("/prime", (req, res) => {
+router.post("/prime", (req, res) => {
  //Add Your Code Here
 });
 
-app.get("/rev", (req, res) => {
+router.post("/rev", (req, res) => {
  //Add Your Code Here
 });
 
-app.get("/pattern", (req, res) => {
+router.post("/pattern", (req, res) => {
  //Add Your Code Here
 });
 
-app.get("/fibo", (req, res) => {
+router.post("/fibo", (req, res) => {
  //Add Your Code Here
 });
+module.exports = router;
